@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mytorch"
+version = "0.1.0"
+description = "A simple machine learning package"
+authors = [
+    {name = "Frederike Dümbgen", email = "fduembgen@cmu.edu"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+]

@@ -1,0 +1,18 @@
+name: adv_opt
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pytest
+
+  - black=25.11
+  - cvxpy
+  - jupyter
+  - matplotlib
+  - numpy
+  - scikit-learn
+  - scipy
+  - pip:
+    - -r requirements.txt
