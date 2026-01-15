@@ -1,10 +1,6 @@
 import numpy as np
 
-from mytorch.layers import (
-    linear,
-    linear_lmap,
-    linear_lmap_adjoint,
-)
+from mytorch.layers import linear, linear_lmap, linear_lmap_adjoint
 
 
 # ============================================================
@@ -15,7 +11,7 @@ def _test_linear_lmap(f, f_lmap):
 
     lmap_exact = None
     lmap_finite_diff = None
-    
+
     np.testing.assert_allclose(lmap_exact, lmap_finite_diff, rtol=1e-5, atol=1e-8)
 
 
@@ -28,6 +24,7 @@ def _test_linear_lmap_adjoint(f, f_lmap_adjoint):
     np.testing.assert_allclose(
         lmap_adjoint_exact, lmap_adjoint_finite_diff, rtol=1e-5, atol=1e-8
     )
+
 
 # ============================================================
 # Run all tests
