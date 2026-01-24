@@ -13,10 +13,6 @@ def linear(x, W):
 def linear_lmap(x, W, dx=None, dW=None):
     """Differential of linear map at x along dx."""
 
-    # first notebook
-    # return None
-
-    # second notebook
     lmap_x = None
     lmap_W = None
     return lmap_x, lmap_W
@@ -25,10 +21,6 @@ def linear_lmap(x, W, dx=None, dW=None):
 def linear_lmap_adjoint(x, W, u):
     """Adjoint differential of linear map at x along output direction u."""
 
-    # first notebook
-    # return None
-
-    # second notebook
     lmap_adjoint_x = None
     lmap_adjoint_W = None
     return lmap_adjoint_x, lmap_adjoint_W
